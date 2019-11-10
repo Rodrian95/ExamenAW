@@ -22,6 +22,7 @@
         <li><a href="?page=4">Registra rubrica</a></li>
         <li><a href="?page=5">Registra calificacion</a></li>
         <li><a href="?page=6">Reporte calificacion</a></li>
+        <li><a href="visualiza_calificacion.php">Visualiza calificacion</a></li>
         <li><a href="">Calificaciones</a></li>
 
     </ul>
