@@ -17,7 +17,7 @@
     <ul>
         <li><a href="?page=1">Registro-Alumno</a></li>
         <li><a href="?page=2">Registro-Profesor</a></li>
-        <li><a href="?page=3">Inicar Sesion</a></li>
+        <li><a href="?page=3">Iniciar Sesion</a></li>
         <li><a href="">Calificaciones</a></li>
 
     </ul>
