@@ -1,5 +1,5 @@
 <?php
-	include './conexionescuela.php';
+	include './servidor/conexionescuela.php';
 	$SQL="Select * From estudiante";
 
 	$result=mysqli_query($conexion,$SQL);
