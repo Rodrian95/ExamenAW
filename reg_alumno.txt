@@ -1,0 +1,14 @@
+USE escuela;
+
+//Alta alumno
+
+INSERT INTO `estudiante`(`matricula`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `carrera`, `password`) 
+VALUES ('201424123','Rodrigo','Chaljub','Ruiz,'ITI','201424123')
+
+//Alta rubrica
+INSERT INTO `rubrica`(`idRubrica`, `nrcR`, `totalExa`, `porcentajeExa`, `porcentajePrac`, `porcentajeProy`) 
+VALUES ('1','4687','3','50','25','25')
+
+//Alta calificaciones
+INSERT INTO `calificacion`(`nrc`, `matricula`, `totalExaPasados`, `porcentajeActualPrac`, `porcentajeActualExa`, `porcentajeProy`, `fecha`) 
+VALUES ('4687','201424123','3','20','40','20',''2018-10-25')
