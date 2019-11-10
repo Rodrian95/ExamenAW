@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--Estilos -->
-    <script src=""></script>
+    <script src="css/estilos.css"></script>
+    <script src="css/main.css"></script>
     <title>Examen-Aplicaciones Web</title>
 </head>
 <body>
