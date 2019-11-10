@@ -16,10 +16,8 @@
 <body>
     <nav class="menu">
     <ul>
-        <li><a href="?page=1">Registro-Alumno</a></li>
-        <li><a href="?page=2">Registro-Profesor</a></li>
-        <li><a href="?page=3">Iniciar Sesion</a></li>
-       
+        <li><a href="?page=1">Cerrar Sesion</a></li>
+        <li><a href="visualiza_calificacion.php">Visualiza calificacion</a></li>
 
     </ul>
     </nav>
@@ -28,24 +26,19 @@
           if(isset($_GET['page'])){
             switch($_GET['page']){
               case 1:
-                include("./reg_alumno.php");
+                include("./cerrar_sesion.php");
                 break;
-              case 2:
-                include("./reg_profesor.php");
-                break;
-              case 3:
-                include("./inicio_sesion.php");
-                break;
-             
               default:
                 include("./inicio.php");
                 break;
                   }
               }
               else{
-                  include("./inicio.php");
+                  
               }
+              include("./inicio.php");
           ?>
+          
     </div>
 </body>
 </html>

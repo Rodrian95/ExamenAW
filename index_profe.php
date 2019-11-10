@@ -16,10 +16,10 @@
 <body>
     <nav class="menu">
     <ul>
-        <li><a href="?page=1">Registro-Alumno</a></li>
-        <li><a href="?page=2">Registro-Profesor</a></li>
-        <li><a href="?page=3">Iniciar Sesion</a></li>
-       
+        <li><a href="?page=1">Cerrar Sesion</a></li>
+        <li><a href="?page=2">Registra rubrica</a></li>
+        <li><a href="?page=3">Registra calificacion</a></li>
+        <li><a href="?page=4">Reporte calificacion</a></li>
 
     </ul>
     </nav>
@@ -28,15 +28,17 @@
           if(isset($_GET['page'])){
             switch($_GET['page']){
               case 1:
-                include("./reg_alumno.php");
-                break;
+                include("./cerrar_sesion.php");
+              break;
               case 2:
-                include("./reg_profesor.php");
-                break;
+                  include("./reg_rubrica.php");
+                  break;
               case 3:
-                include("./inicio_sesion.php");
-                break;
-             
+                  include("./reg_calificacion.php");
+                  break;
+              case 4:
+                    include("./reporte_calificacion.php");
+                    break;
               default:
                 include("./inicio.php");
                 break;

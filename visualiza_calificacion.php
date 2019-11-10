@@ -1,10 +1,12 @@
 <?php
+    session_start();
+
     include ('servidor/conexionescuela.php');
     include ("src/jpgraph.php");
     include ("src/jpgraph_pie.php");
     include ("src/jpgraph_pie3d.php");
 
-    $sSQL="Select * From calificacion Where matricula='201424123'";
+    $sSQL="Select * From calificacion Where matricula= '201424123' ";
     $result2=mysqli_query($conexion,$sSQL);
     $row = mysqli_fetch_array($result2);
 

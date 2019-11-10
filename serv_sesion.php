@@ -1,5 +1,5 @@
 <?php
-include ('./conexionescuela.php');
+include ('./servidor/conexionescuela.php');
 
 $status = "Por ahora bien todo";
 
@@ -24,16 +24,19 @@ if($count==0){
         elseif(password_verify($password, $row['password'])){
             session_start();
             $_SESSION['loggedin'] = true;
+            $_SESSION['id'] = $row['idProfesor'];
             $_SESSION['nombre'] = $row['nombre'];
             $_SESSION['apellidoPaterno'] = $row['apellidoPaterno'];
             $_SESSION['apellidoMaterno'] = $row['apellidoMaterno'];
             $_SESSION['area'] = $row['area'];
             $_SESSION['start'] = time();
             $_SESSION['expire'] = $_SESSION['start'] + (50 * 60);
+            
            session_write_close();
            $status = "Inicio de sesion exitoso";
         }
-        echo $status;
+        //echo $status;
+        header('location: ./index_profe.php');
     }
 }
 else{
@@ -44,6 +47,7 @@ else{
     elseif(password_verify($password, $row['password'])){
         session_start();
         $_SESSION['loggedin'] = true;
+        $_SESSION['id'] = $row['matricula'];
         $_SESSION['nombre'] = $row['nombre'];
         $_SESSION['matricula'] = $row["matricula"];
         $_SESSION['apellidoPaterno'] = $row['apellidoPaterno'];
@@ -54,5 +58,6 @@ else{
        session_write_close();
        $status = "Inicio de sesion exitoso";
     }
-    echo $status;
+    //echo $status;
+    header('location: ./index_alumno.php');
 }
