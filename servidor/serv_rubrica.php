@@ -12,8 +12,8 @@ $query1 = "SELECT nrc FROM curso WHERE nrc = '$nrc' ";
 $result = $conexion->query($query1);
 $count = mysqli_num_rows($result);
 
-if($count>0){
-    echo 'EL NRC de no existe';
+if($count<=0){
+    echo 'El NRC no existe';
 }
 else{
     $query = "INSERT INTO `rubrica`(`nrc`, `totalExa`, `porcentajeExa`, `porcentajePrac`, `porcentajeProy`) 

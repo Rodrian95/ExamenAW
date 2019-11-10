@@ -20,6 +20,7 @@
         <li><a href="?page=2">Registro-Profesor</a></li>
         <li><a href="?page=3">Iniciar Sesion</a></li>
         <li><a href="?page=4">Registra rubrica</a></li>
+        <li><a href="?page=5">Registra calificacion</a></li>
         <li><a href="">Calificaciones</a></li>
 
     </ul>
@@ -39,6 +40,9 @@
                 break;
               case 4:
                   include("./reg_rubrica.php");
+                  break;
+              case 5:
+                  include("./reg_calificacion.php");
                   break;
               default:
                 include("./inicio.php");
